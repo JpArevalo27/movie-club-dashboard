@@ -63,18 +63,17 @@ You can build the image using with the name `movie-club-dashboard` and an option
 ```bash
 docker build -t movie-club-dashboard(:<tag>) .
 ```
+The `.` at the end of the command is necessary.
 
 ### Run the docker image
 
 You can run the image built with the prior command using
 
 ```bash
-docker run -p 8080:80 movie-club-dashboard(:<tag>) .
+docker run -p 8080:80 movie-club-dashboard(:<tag>)
 ```
 
 The host port (8080) can be altered to be any port you prefer in localhost, and the container port (80) is the one used by the nginx.conf file, so you can alter it there and the docker command if you would like to do so.
-
-The `.` at the end of the command is necessary.
 
 ## Additional Resources
 
